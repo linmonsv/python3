@@ -117,6 +117,11 @@ def is_palindrome2(n):
 output = filter(is_palindrome2, range(1, 1000))
 print(list(output))
 
+str20151226 ="第二百五十二章 天机如何? 下"
+print(str20151226)
+str20151226_2 = str20151226.replace("?", "")
+print(str20151226_2)
+
 #Python内置的sorted()函数就可以对list进行排序
 print(sorted([36, 5, -12, 9, -21]))
 print(sorted([36, 5, -12, 9, -21], key = abs))

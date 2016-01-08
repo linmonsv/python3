@@ -162,6 +162,12 @@ def move(n, a, b, c):
 
 move(3, 'A', 'B', 'C')
 
+def add(a):
+    a = a + 1
+    return a
+aaa = 3
+bbb = add(aaa)
+print(aaa, bbb)
 
 
 

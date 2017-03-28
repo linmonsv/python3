@@ -9,4 +9,8 @@ print(binascii.b2a_hex(buf2))
 res = []
 for i in range(0, 8):
     res.append("%02X" % (buf1[i] ^ buf2[i]))
-print("".join(res))
+print("1", "".join(res))
+
+print("2", "".join(["%02X" % (buf1[i] ^ buf2[i]) for i in range(0, 8)]))
+
+print("3", "".join(list(map(lambda x, y:"%02X" % (x^y), list(buf1), list(buf2)))))
